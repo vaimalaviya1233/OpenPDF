@@ -3,6 +3,7 @@ package com.lowagie.text.pdf;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.lowagie.text.Chunk;
@@ -11,7 +12,11 @@ import com.lowagie.text.Font;
 import com.lowagie.text.FontFactory;
 
 class PdfDocumentCJKExtensionTest {
+
+	// This test is actually only an example. It is disabled because the needed font is not in the repository and
+	// requires 45 Mb of space.
 	@Test
+	@Disabled("This test requires a font file.")
 	void generateDocumentsWithCJKExtension() throws IOException {
 		String fontName = "TakaoMjMincho";
 
